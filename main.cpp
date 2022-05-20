@@ -4,6 +4,7 @@
 #include <string>
 #include "iconarray.cpp"
 #include "blocksarray.cpp"
+#include "fontarray.cpp"
 #include "block.h"
 
 
@@ -162,7 +163,7 @@ int main() {
     lines[6].position = sf::Vector2f(321, 640);
 
     sf::Font font;
-    font.loadFromFile("BACKTO1982.TTF");
+    font.loadFromMemory(BACKTO1982_TTF, BACKTO1982_TTF_len);
 
     sf::Text time;
     time.setFont(font);
