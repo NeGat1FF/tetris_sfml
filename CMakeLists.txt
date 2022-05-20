@@ -8,5 +8,5 @@ set(SFML_STATIC_LIBRARIES TRUE)
 set(SFML_DIR $"C:/SFML")
 find_package(SFML COMPONENTS audio graphics network system REQUIRED)
 
-add_executable(SFML_TEST WIN32 main.cpp block.cpp block.h icon.rc)
-target_link_libraries(SFML_TEST sfml-audio sfml-graphics sfml-network sfml-system sfml-window)
+add_executable(Tetris WIN32 main.cpp block.cpp block.h icon.rc)
+target_link_libraries(Tetris sfml-audio sfml-graphics sfml-network sfml-system sfml-window)
