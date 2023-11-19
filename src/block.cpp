@@ -1,6 +1,6 @@
 #include "block.h"
 
-block::block(int t){
+block::block(int t, sf::Texture &block_texture){
 
     for(int i = 0;i < 4;i++){
         tetromino[i].setSize(sf::Vector2f(32,32));
@@ -11,7 +11,9 @@ block::block(int t){
 
     color = t;
 }
-sf::Texture block::block_texture = sf::Texture(); //NOLINT
+
+
+//sf::Texture block::block_texture;
 
 
 void block::move(move_direction dir,int o){

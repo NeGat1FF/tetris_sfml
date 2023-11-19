@@ -30,12 +30,12 @@ const int figures[7][4] = {
 class block
 {
 public:
-    explicit block(int t);
+    explicit block(int t, sf::Texture &block_texture);
     sf::RectangleShape tetromino[4];
     void rotate();
     void move(move_direction dir, int o = 32);
     int color;
-    static sf::Texture block_texture;
+    //static sf::Texture block_texture;
     sf::Vector2<float> pos(int i) const;
 };
 
